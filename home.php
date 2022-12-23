@@ -187,7 +187,7 @@ include 'layout/header.php';
     </div>
     <!-- Publikasi -->
     <?php
-    $publikasi = query("$conn, SELECT * FROM publikasi ORDER BY id DESC LIMIT 2");
+    $publikasi = mysqli_query($conn,"SELECT * FROM publikasi ORDER BY id DESC LIMIT 2");
     ?>
     <div class="bg-gray-800 px-4 lg:px-24 pb-8" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
         <p class="text-red-600 text-center font-bold pt-8">List Motor</p>
