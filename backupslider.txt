@@ -1,0 +1,22 @@
+<div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="object-cover" style="background-image: url('https://source.unsplash.com/user/erondu/3000x900');">
+                    <div class="pt-36 px-4 sm:pl-20 md:pl-44 ">
+                        <div class="px-8 mr-14">
+                            <div class="py-3 px-3 md:py-4 md:px-4 bg-yellow-200 bg-opacity-90 rounded-lg sm:mr-80 md:mr-96">
+                                <p class="text-sm md:text-xl text-yellow-600 font-bold"> SNM NJHEIO 9 LANUAK HSJO </p>
+                            </div>
+                            <div class="mt-3 my-2 py-3 px-3 md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80 md:mr-96">
+                                <p class="text-xs md:text-xl text-white font-normal"> LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
