@@ -17,7 +17,7 @@ include('database_connection.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>NyariMotorID</title>
+    <title>Product filter in php</title>
 
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -29,6 +29,8 @@ include('database_connection.php');
 </head>
 
 <body>
+<?php include ('../layout/header.php');?>
+<?php include ('../layout/navbar.php');?>
     <!-- Page Content -->
     <div class=" bg-red-600">
         <div class="row">

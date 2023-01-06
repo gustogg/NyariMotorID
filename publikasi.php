@@ -1,6 +1,6 @@
 <?php
 require './admin/koneksi.php';
-$publikasi = mysqli_query($conn, "SELECT * FROM publikasi ORDER BY id DESC");
+$publikasi = mysqli_query($conn, "SELECT * FROM publikasi ORDER BY id ASC");
 ?>
 
 <?php include 'layout/header.php'; ?>

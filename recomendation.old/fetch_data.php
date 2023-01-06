@@ -1,5 +1,4 @@
 <?php
-
  include ('../layout/header.php');
  include ('../layout/navbar.php');
 //fetch_data.php
@@ -7,9 +6,7 @@ include('database_connection.php');
 
 if(isset($_POST["action"]))
 {
-	$query = "
-		SELECT * FROM smallcc 
-	";
+	$query = "SELECT * FROM smallcc";
     if(isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"]))
 	{
 		$query .= "
@@ -41,7 +38,6 @@ if(isset($_POST["action"]))
 	$statement->execute();
 	$result = $statement->fetchAll();
 	$total_row = $statement->rowCount();
-	echo $total_row;
 	$output = '';
 	if($total_row > 0)
 	{

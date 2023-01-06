@@ -1,42 +1,13 @@
 <?php
 
- include ('../layout/header.php');
- include ('../layout/navbar.php');
 //fetch_data.php
 include('database_connection.php');
 
 if(isset($_POST["action"]))
 {
 	$query = "
-		SELECT * FROM smallcc 
+		SELECT * FROM smallcc
 	";
-    if(isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"]))
-	{
-		$query .= "
-		 WHERE Harga BETWEEN '".$_POST["minimum_price"]."' AND '".$_POST["maximum_price"]."'
-		";
-	}
-    if(isset($_POST["brand"]))
-	{
-		$brand_filter = implode("','", $_POST["brand"]);
-		$query .= "
-		 AND brand IN('".$brand_filter."')
-		";
-	}
-    if(isset($_POST["cc"]))
-	{
-		$cc_filter = implode("','", $_POST["cc"]);
-		$query .= "
-		 AND cc IN('".$cc_filter."')
-		";
-	}
-    if(isset($_POST["transmisi"]))
-	{
-		$transmisi_filter = implode("','", $_POST["transmisi"]);
-		$query .= "
-		 AND transmisi IN('".$transmisi_filter."')
-		";
-	}
 	$statement = $connect->prepare($query);
 	$statement->execute();
 	$result = $statement->fetchAll();

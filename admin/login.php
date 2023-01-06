@@ -52,7 +52,7 @@ if (isset($_POST["login"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login - Admin Yayasan Akshara Linia Indonesia</title>
+    <title>Login - Admin NyariMotorID</title>
 
     <link href="/public/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -80,7 +80,7 @@ if (isset($_POST["login"])) {
 
     <main class="bg-white w-10/12 sm:w-9/12 md:w-7/12 lg:w-6/12 xl:w-5/12 mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
         <section>
-            <h3 class="font-bold text-lg md:text-xl  xl:text-2xl">Selamat datang di halaman login Admin Yayasan Akshara Linia Indonesia.</h3>
+            <h3 class="font-bold text-lg md:text-xl  xl:text-2xl">Selamat datang di halaman login Admin NyariMotorID.</h3>
             <p class="text-gray-600 text-base pt-2">Login ke akun admin.</p>
         </section>
 
