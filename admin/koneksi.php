@@ -3,9 +3,9 @@
 $server = "localhost";
 $user = "root";
 $pass = "";
-$database = "yayasan";
+$database = "nyarimotorid";
 
-$koneksi = mysqli_connect("localhost","root","","yayasan");
+$koneksi = mysqli_connect("localhost","root","","nyarimotorid");
 $conn = mysqli_connect($server, $user, $pass, $database);
  
 if (!$conn) {
