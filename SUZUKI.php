@@ -26,7 +26,7 @@ $publikasi = mysqli_query($conn,"SELECT * FROM smallcc WHERE brand='Suzuki'");
                         <p class="text-xl text-red-600 font-bold"><?php echo $row["tipe"]?></p>
                         <p class="pt-2 text-lg"><strong>Kapasitas Mesin : </strong> <?php echo $row["cc"]?> CC</p>
                         <p class="pt-2 text-lg"><strong>Kapasitas BBM : </strong> <?php echo $row["bbm"]?>Liter</p>
-                        <p class="pt-2 text-lg"><strong>Konsumsi BBM (/L) : </strong> <?php echo $row["jarak_bbm"]?> km/l</p>
+                       <!-- <p class="pt-2 text-lg"><strong>Konsumsi BBM (/L) : </strong> <?php echo $row["jarak_bbm"]?> km/l</p> -->
                         <p class="pt-2 text-lg"><strong>Jenis Transmisi : </strong> <?php echo $row["transmisi"]?></p>
                         <p class="pt-2 text-lg"><strong>Tenaga : </strong> <?php echo $row["Power"]?> / <?php echo $row["Torsi"]?></p>
                         <p class="pt-4 text-lg font-bold"><?php echo $row["Harga"]?></p>
